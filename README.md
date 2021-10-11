@@ -26,8 +26,6 @@ Here are the seller and customer workflows:
 - Seller gets notified when a product is sold
 - Seller hands over an item to the logistic carrier
 
-👉 Note that multiple sellers can be involved in one customer order!
-
 **Customer:**
 
 - Browses products on the marketplace
@@ -36,16 +34,14 @@ Here are the seller and customer workflows:
 - Receives the order
 - Leaves a review about the order
 
-👉 A review can be left as soon as the order is sent, meaning that a customer can leave a review for a product he did not receive yet!
-
 
 # Install
 
 Clone the project and install it:
 
 ```bash
-git clone git@github.com:{group}/kaggle-olist.git
-cd kaggle-olist
+git clone git@github.com:aduverger/olist.git
+cd olist
 pip install -r requirements.txt
 make clean install test           # install and test
 ```
@@ -59,6 +55,7 @@ Download the 9 datasets and store them in your ```data/csv``` folder.
 
 The data is provided through csv files yet the structure is similar to SQL.
 You can refer to this schema for details:
+
 ![](https://i.imgur.com/HRhd2Y0.png)
 
 
@@ -70,9 +67,9 @@ Alternatively, you can directly look at [the presentation](./notebooks/final_pre
 
 Here are some examples of the insights that have been made using seaborn and plotly:
 
-![](./notebooks/img/underperforming.svg)
+![](./notebooks/img/underperforming.png)
 
-![](./notebooks/img/active_period.svg)
+![](./notebooks/img/active_period.png)
 
 ![](./notebooks/img/bad_sellers.png)
 
