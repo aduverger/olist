@@ -67,10 +67,10 @@ Alternatively, you can directly look at [the presentation](./notebooks/final_pre
 
 Here are some examples of the insights that have been made using seaborn and plotly:
 
-![](./notebooks/img/underperforming.png)
+![Underperforming sellers](./notebooks/img/underperforming.png)
 
-![](./notebooks/img/active_period.png)
+![Old or new friends ?](./notebooks/img/active_period.png)
 
-![](./notebooks/img/bad_sellers.png)
+![Slow delivery ?](./notebooks/img/delivery.png)
 
-
+![Behaviour pattern](./notebooks/img/bad_sellers.png)
