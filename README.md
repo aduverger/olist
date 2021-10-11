@@ -67,10 +67,14 @@ Alternatively, you can directly look at [the presentation](./notebooks/final_pre
 
 Here are some examples of the insights that have been made using seaborn and plotly:
 
+**Why we should remove underperforming sellers:**
 ![Underperforming sellers](./notebooks/img/underperforming.png)
 
+**Old or new friends ?**
 ![Old or new friends ?](./notebooks/img/active_period.png)
 
+**Slow delivery ?**
 ![Slow delivery ?](./notebooks/img/delivery.png)
 
+**Sellers behaviour pattern:**
 ![Behaviour pattern](./notebooks/img/bad_sellers.png)
