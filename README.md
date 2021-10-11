@@ -1,74 +1,79 @@
-# Data analysis
-- Document here the project: olist
-- Description: Project Description
-- Data Source:
-- Type of analysis:
+# Olist project
+This project is about analyzing a dataset provided by an e-commerce marketplace called [Olist](https://olist.com/) to answer the CEO’s question:
 
-Please document the project the better you can.
+*How to increase customer satisfaction (so as to increase profit margin) while maintaining a healthy order volume?*
 
-# Startup the project
+This project demonstrates skills about:
+- Data sourcing from SQL/CSV files using pandas
+- Feature engineering using pandas
+- Data visualization & Decision Science using pyplot, seaborn and plotly
 
-The initial setup.
 
-Create virtualenv and install the project:
-```bash
-sudo apt-get install virtualenv python-pip python-dev
-deactivate; virtualenv ~/venv ; source ~/venv/bin/activate ;\
-    pip install pip -U; pip install -r requirements.txt
-```
+# About Olist 🇧🇷
 
-Unittest test:
-```bash
-make clean install test
-```
+![](https://raw.githubusercontent.com/lewagon/data-images/master/best-practices/olist.png)
 
-Check for olist in gitlab.com/{group}.
-If your project is not set please add it:
+Olist is a leading e-commerce service that connects merchants to main marketplaces in Brazil. They provide a wide range of offers including inventory management, dealing with reviews and customer contacts to logistic services.
 
-- Create a new project on `gitlab.com/{group}/olist`
-- Then populate it:
+Olist charges sellers a monthly fee. This fee is progressive with the volume of orders.
 
-```bash
-##   e.g. if group is "{group}" and project_name is "olist"
-git remote add origin git@github.com:{group}/olist.git
-git push -u origin master
-git push -u origin --tags
-```
+Here are the seller and customer workflows:
 
-Functionnal test with a script:
+**Seller:**
 
-```bash
-cd
-mkdir tmp
-cd tmp
-olist-run
-```
+- Seller joins Olist
+- Seller uploads products catalogue
+- Seller gets notified when a product is sold
+- Seller hands over an item to the logistic carrier
+
+👉 Note that multiple sellers can be involved in one customer order!
+
+**Customer:**
+
+- Browses products on the marketplace
+- Purchases products from Olist.store
+- Gets an expected date for delivery
+- Receives the order
+- Leaves a review about the order
+
+👉 A review can be left as soon as the order is sent, meaning that a customer can leave a review for a product he did not receive yet!
+
 
 # Install
-
-Go to `https://github.com/{group}/olist` to see the project, manage issues,
-setup you ssh public key, ...
-
-Create a python3 virtualenv and activate it:
-
-```bash
-sudo apt-get install virtualenv python-pip python-dev
-deactivate; virtualenv -ppython3 ~/venv ; source ~/venv/bin/activate
-```
 
 Clone the project and install it:
 
 ```bash
-git clone git@github.com:{group}/olist.git
-cd olist
+git clone git@github.com:{group}/kaggle-olist.git
+cd kaggle-olist
 pip install -r requirements.txt
-make clean install test                # install and test
+make clean install test           # install and test
 ```
-Functionnal test with a script:
 
-```bash
-cd
-mkdir tmp
-cd tmp
-olist-run
-```
+
+# Download the dataset
+
+The dataset consists of 100k orders from 2016 and 2018 that were made on the Olist store, available as a csv on [Kaggle](https://www.kaggle.com/olistbr/brazilian-ecommerce).
+
+Download the 9 datasets and store them in your ```data/csv``` folder.
+
+The data is provided through csv files yet the structure is similar to SQL.
+You can refer to this schema for details:
+![](https://i.imgur.com/HRhd2Y0.png)
+
+
+# Run the notebook
+
+You just have to run the notebook that is inside the ```notebook``` folder to see how we used data science as a tool to identify bad sellers from the Olist store.
+
+Alternatively, you can directly look at [the presentation](./notebooks/final_presentation.html) made with Jupyter.
+
+Here are some examples of the insights that have been made using seaborn and plotly:
+
+![](./notebooks/img/underperforming.svg)
+
+![](./notebooks/img/active_period.svg)
+
+![](./notebooks/img/bad_sellers.png)
+
+
